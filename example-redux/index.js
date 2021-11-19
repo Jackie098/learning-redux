@@ -1,3 +1,5 @@
+const Redux = require('redux');
+
 // Ações
 const incrementar = { type: 'INCREMENTAR' }
 const decrementar = { type: 'DECREMENTAR' }
@@ -26,3 +28,10 @@ const store = Redux.createStore(reducer)
 function log() {
   console.log('Contador: ', store.getState().contador);
 }
+
+log()
+
+store.dispatch(incrementar)
+store.dispatch(incrementar)
+
+log()
