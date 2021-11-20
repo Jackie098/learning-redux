@@ -31,6 +31,8 @@ const mapStateToProps = state => ({
   modules: state.course.modules
 });
 
+
+// Dispatch changes the state in the STORE as it is read-only
 const mapDispatchToProps = dispatch => (
   // toggleLesson: (module, lesson) =>
   //   dispatch(CourseActions.toggleLesson(module, lesson))
